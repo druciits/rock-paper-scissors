@@ -1,13 +1,21 @@
-p1 = input('Input Player1 turn:')
-p2 = input('Input Player2 turn:')
+import random
+x = ['rock', 'paper', 'scissors']
+
+print('ROCK, PAPER, SCISSORS')
+print("Let's begin!")
+
+p1 = input('Enter your choice:')
+p2 = random.choice(x)
+
+print(f'You: {p1}   vs.   Computer: {p2}')
 
 if p1 == p2:
     print('Draw!')
 elif p1 == 'rock' and p2 == 'paper':
-    print('Player2 Wins!')
+    print('Computer Wins!')
 elif p1 == 'paper' and p2 == 'scissors':
-    print('Player2 Wins!')
+    print('Computer Wins!')
 elif p1 == 'scissors' and p2 == 'rock':
-    print('Player2 Wins!')
+    print('Computer Wins!')
 else:
-    print('Player1 Wins!')
+    print('You Win!')
