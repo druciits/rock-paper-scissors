@@ -5,8 +5,11 @@ while(True):
     print('ROCK, PAPER, SCISSORS')
     print("Let's begin!")
 
-    p1 = input('Enter your choice:')
+    p1 = input('Enter your choice or type exit:')
     p2 = random.choice(x)
+
+    if p1 == 'exit':
+        break
 
     print(f'You:{p1}   vs.   Computer:{p2}')
 
