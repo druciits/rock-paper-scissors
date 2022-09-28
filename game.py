@@ -1,5 +1,7 @@
 import random
 x = ['rock', 'paper', 'scissors']
+p1s = []
+p2s = []
 
 while(True):
     print('ROCK, PAPER, SCISSORS')
@@ -10,6 +12,9 @@ while(True):
 
     if p1 == 'exit':
         break
+
+    p1s.append(p1)
+    p2s.append(p2)
 
     print(f'You:{p1}   vs.   Computer:{p2}')
 
@@ -22,5 +27,9 @@ while(True):
     elif p1 == 'scissors' and p2 == 'rock':
         print('Computer Wins!')
     else:
-        print('You Win!')
-    
+        print('You Win!')                                                                                                                                                                
+
+
+print(f'You have played {len(p1s)} times')
+print(p1s)
+print(p2s)
